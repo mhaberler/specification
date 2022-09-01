@@ -300,6 +300,12 @@
       "pattern": "^urn:mrn:signalk:uuid:[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-4[0-9A-Fa-f]{3}-[89ABab][0-9A-Fa-f]{3}-[0-9A-Fa-f]{12}$",
       "example": "urn:mrn:signalk:uuid:b7590868-1d62-47d9-989c-32321b349fb9"
     },
+    "aid": {
+      "type": "string",
+      "description": "A globally unique aircraft 24-bit identifier used in secondary surveillance radar (ADS-B), specifically Mode S transponder traffic. Managed by ICAO and issued through national authorities. See https://www.tucuxi.org/ads-b-addresses/ for an introduction. ",
+      "pattern": "^urn:icao:aid:[0-9A-Fa-f]{6}$",
+      "example": "urn:icao:aid:4409C8"
+    },
     "url": {
       "type": "string",
       "description": "A location of a resource, potentially relative. For hierarchical schemes (like http), applications must resolve relative URIs (e.g. './v1/api/'). Implementations should support the following schemes: http:, https:, mailto:, tel:, and ws:.",
